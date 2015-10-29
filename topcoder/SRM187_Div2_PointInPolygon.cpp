@@ -59,7 +59,7 @@ private:
 		getCoeff(a2, b2, c2);
 		
 		double det = c1[0] * c2[1] - c2[0] * c1[1];
-		if (det == 0) return false;
+		if (fabs(det) <= EPS) return false;
 		double dx = c1[1] * c2[2] - c2[1] * c1[2];
 		double dy = c1[2] * c2[0] - c2[2] * c1[0];
 		double p[2];
