@@ -5,6 +5,12 @@
 
 ## Suggestions
 - [ ] Convert functions **cmp(something, something)** to **lambda functions**
+- [ ] Write tests for each Tool
+- [ ] Convert Tools to another programming languagues, such as: Javascript, Java, etc...
+
+## Need some help
+> I would really appreciate if someone can help me fix some bugs. Many thanks!
+- [ ] Solution topcoder/SRM177_Div1_Warehouse.cpp is wrong at one test case. Maybe because double error. My weakness!!!
 
 ## Template
 ```cpp
@@ -25,6 +31,7 @@ const double EPS = 1e-8;
 const ll MOD = 1e9 + 7;
 const int MAXN = 1e5 + 5;
 const int oo = 1e9;
+const double foo = 1e30;
 
 char line[MAXN];
 list<char> res;
@@ -136,7 +143,7 @@ int convex(double b[][2], int N) {
     }
     return M;
 }
-void toLine(double p[], double v[], double c[]) {
+void toLine1(double p[], double v[], double c[]) {
     // ax + by + c = 0
     c[0] = v[0];
     c[1] = v[1];
@@ -152,8 +159,8 @@ void toLine(double p1[], double p2[], double c[]) {
 }
 void intersection2Lines(double c1[], double c2[], double p[]) {
     double det = c1[0] * c2[1] - c2[0] * c1[1];
-    if (det == 0) {
-        p[0] = p[1] = oo;
+    if (fabs(det) <= EPS) {
+        p[0] = p[1] = +foo;
         return;
     }
     double dx = c1[1] * c2[2] - c2[1] * c1[2];
@@ -162,7 +169,7 @@ void intersection2Lines(double c1[], double c2[], double p[]) {
     p[1] = dy / det;
 }
 double distPointToLine(double p[], double p1[], double p2[]) {
-    double ret = abs(cross(p, p1, p2) / 2);
+    double ret = abs(cross(p, p1, p2));
     return ret / dist(p1, p2);
 }
 double distPointToSegment(double p[], double p1[], double p2[]) {
@@ -188,6 +195,10 @@ bool isIntersect2Segments(double a1[], double b1[], double a2[], double b2[]) {
     p[0] = dx / det;
     p[1] = dy / det;
     return isPointInSegment(p, a1, b1) && isPointInSegment(p, a2, b2);
+}
+bool isIntersect2Lines(double c1[], double c2[]) {    
+    double det = c1[0] * c2[1] - c2[0] * c1[1];
+    return !(fabs(det) <= EPS);        
 }
 void reflectPointThroughLine(double line[], double p[], double q[]) {
     double temp[3];
