@@ -1,9 +1,11 @@
-Case 1:
-1
-2
-1
-3
-2
-Case 2:
-1
-2
+Aaraadhanaa recessive
+Albert dominant
+Alberta dominant
+Cooper dominant
+Elizabeth dominant
+John recessive
+Maya dominant
+Robert dominant
+Suzanne dominant
+Trong-Phe non-existent
+Zara dominant
