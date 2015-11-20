@@ -11,6 +11,7 @@
 ## Need some help
 > I would really appreciate if someone can help me fix some bugs. Many thanks!
 - [ ] Solution topcoder/SRM177_Div1_Warehouse.cpp is wrong at one test case. Maybe because double error. My weakness!!!
+- [ ] Why is solution 10138_uva.cpp.cpp wrong ??? Maybe I misunderstood problem statement ?!
 
 ## Template
 ```cpp
