@@ -1,5 +1,3 @@
-queue
-not sure
-impossible
-stack
-priority queue
+Yes
+Yes
+No
