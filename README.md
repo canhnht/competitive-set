@@ -10,6 +10,7 @@
 
 ## Need some help
 > I would really appreciate if someone can help me fix some bugs. Many thanks!
+
 - [ ] Solution topcoder/SRM177_Div1_Warehouse.cpp is wrong at one test case. Maybe because double error. My weakness!!!
 - [ ] Why is solution 10138_uva.cpp.cpp wrong ??? Maybe I misunderstood problem statement ?!
 
@@ -22,7 +23,11 @@ using namespace std;
 
 #define pb push_back
 #define mp make_pair
-#define ll long long
+#define ALL(x) (x).begin(),(x).end()
+#define UNIQUE(V) (V).erase(unique((V).begin(),(V).end()),(V).end())
+#define MP make_pair
+
+typedef long long ll;
 typedef pair<int, int> pii;
 typedef pair<double, double> pdd;
 typedef pair<int, pii> ppi;
@@ -34,14 +39,16 @@ const int MAXN = 1e5 + 5;
 const int oo = 1e9;
 const double foo = 1e30;
 
-char line[MAXN];
-list<char> res;
-int dir;
 
 int main() {
 #ifndef ONLINE_JUDGE
     freopen("inp.txt", "r", stdin);
     freopen("out.txt", "w", stdout);
+#endif
+
+
+#ifndef ONLINE_JUDGE
+    printf("\nTime elapsed: %dms", 1000 * clock() / CLOCKS_PER_SEC);
 #endif
 }
 ```
