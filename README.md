@@ -13,6 +13,7 @@
 
 - [ ] Solution topcoder/SRM177_Div1_Warehouse.cpp is wrong at one test case. Maybe because double error. My weakness!!!
 - [ ] Why is solution 10138_uva.cpp.cpp wrong ??? Maybe I misunderstood problem statement ?!
+- [ ] Solution 10158_uva.cpp keeps getting Segmentation fault (Core dumped) when compiling and running with g++ in ubuntu. I don't know why!!!
 
 ## Template
 ```cpp
