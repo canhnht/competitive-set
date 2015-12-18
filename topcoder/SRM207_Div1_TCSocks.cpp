@@ -12,6 +12,7 @@ typedef pair<int, int> pii;
 const int MAXN = 15;
 const int MAXS = 1 << MAXN;
 const int MAXT = 200;
+const int oo = 1e9;
 
 int N;
 int w[MAXN][MAXN], tt[MAXN][MAXN];
@@ -51,7 +52,9 @@ int TCSocks::earnMoney(vector<int> money, vector<string> c, vector<string> t, ve
 			profit[i][k] = p;
 		}
 	}
-	memset(dp, -1, sizeof dp);
+	for (int i = 0; i < MAXS; ++i) {
+		for (int k = 0; k < MAXN; ++k) dp[i][k] = make_pair(-oo, -oo);
+	}
 	dp[1][0] = make_pair(0, 0);
 	int res = 0;
 	for (int i = 2; i < (1 << N); ++i) {
@@ -60,7 +63,7 @@ int TCSocks::earnMoney(vector<int> money, vector<string> c, vector<string> t, ve
 				int prev = i ^ (1 << k);
 				if (prev > 0) {
 					for (int p = 0; p < N; ++p) {
-						if ((prev >> p) & 1 && dp[prev][p].first > -1) {
+						if ((prev >> p) & 1 && dp[prev][p].first > -oo) {
 							if (dp[i][k].first < dp[prev][p].first - w[p][k] + profit[k][dp[prev][p].second + tt[p][k]]) {
 								dp[i][k].first = dp[prev][p].first - w[p][k] + profit[k][dp[prev][p].second + tt[p][k]];
 								dp[i][k].second = dp[prev][p].second + tt[p][k];
