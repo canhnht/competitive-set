@@ -25,7 +25,6 @@ using namespace std;
 #define mp make_pair
 #define ALL(x) (x).begin(),(x).end()
 #define UNIQUE(V) (V).erase(unique((V).begin(),(V).end()),(V).end())
-#define MP make_pair
 
 typedef long long ll;
 typedef pair<int, int> pii;
@@ -37,8 +36,6 @@ const double EPS = 1e-8;
 const ll MOD = 1e9 + 7;
 const int MAXN = 1e5 + 5;
 const int oo = 1e9;
-const double foo = 1e30;
-
 
 int main() {
 #ifndef ONLINE_JUDGE
@@ -52,6 +49,30 @@ int main() {
 #endif
 }
 ```
+
+## Some tips for testing machines in ACM-ICPC
+- Submit problems for **Accepted**, **Wrong Answer**, **Time Limit Exceeded** answers.
+- Check memory limit by e.g **creating an array of 10^8 elements**
+- Check time for running program with complexity **10^8**, **3 * 10^8**, **5 * 10^8**
+- Check recursion limit by make recursion program of **10^6** steps
+- Check if ACM server check **Wrong Presentation** in output
+- Check which editor is available. Usually there are DevCpp, Eclipse, CodeBlock.
+- Check limit of file size of source code. Just in case, we can cheat some problems by storing precalculated answer.
+- Try to submit as fast as you can and as many as you can, to see how stable is server.
+- Try the **above template**
+
+## Your test cases should include
+- Sample test cases
+- 2 or more test cases in single run, for ACM-ICPC
+- Very small input
+- Very large input
+- Boundary test cases
+- Unformatted input, more whitespaces (spaces, tabs)
+
+## Tips for teamwork in ACM-ICPC
+- Right after submitting, **print the source code**. Just in case solution is not AC, you can debug your code in printout and leave computer for your teammate to solve another problem. Moreover, print process is quite slow.
+- If computer is being used by another teammate, **think and code your solution on blank paper**.
+- **Prepare test cases** when your teammate is coding solution.
 
 ## Bit Manipulation
 ```cpp
