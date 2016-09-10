@@ -17,7 +17,6 @@
 
 ## Template
 ```cpp
-//This is getting accepted!
 #include<bits/stdc++.h>
 
 using namespace std;
