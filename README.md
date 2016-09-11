@@ -39,13 +39,13 @@ const int oo = 1e9;
 
 int main() {
 #ifndef ONLINE_JUDGE
-    freopen("inp.txt", "r", stdin);
-    freopen("out.txt", "w", stdout);
+	freopen("inp.txt", "r", stdin);
+	freopen("out.txt", "w", stdout);
 #endif
 
 
 #ifndef ONLINE_JUDGE
-    printf("\nTime elapsed: %dms", 1000 * clock() / CLOCKS_PER_SEC);
+  printf("\nTime elapsed: %dms", 1000 * clock() / CLOCKS_PER_SEC);
 #endif
 }
 ```
