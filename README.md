@@ -50,6 +50,10 @@ int main() {
 }
 ```
 
+## Test source code
+- If your source file is ABC.cpp, then create test files as ABC.i0 and ABC.o0, ABC.i1 and ABC.o1, etc...
+- Run ```./ac.sh <program nam> <number test>```. E.g: ```./ac.sh ABC 1```
+
 ## Some tips for testing machines in ACM-ICPC
 - Submit problems for **Accepted**, **Wrong Answer**, **Time Limit Exceeded** answers.
 - Check memory limit by e.g **creating an array of 10^8 elements**
