@@ -24,7 +24,7 @@ int main(int argc, char* argv[]) {
 		command << "diff -ys out.txt " << programName << ".o" << i;
 		cout << command.str() << endl;
 		system(command.str().c_str());
-		cout << "=======================================================================";
+		cout << "=======================================================================\n";
 	}
 	return 0;
 }

@@ -50,9 +50,12 @@ int main() {
 }
 ```
 
-## Test source code
+## Test and submit source code
+- Install xdotool ```sudo apt-get install xdotool```
+- Install uva-node ```sudo npm install -g uva-node```
 - If your source file is ABC.cpp, then create test files as ABC.i0 and ABC.o0, ABC.i1 and ABC.o1, etc...
 - Run ```./ac.sh <program nam> <number test>```. E.g: ```./ac.sh ABC 1```
+- 
 
 ## Some tips for testing machines in ACM-ICPC
 - Submit problems for **Accepted**, **Wrong Answer**, **Time Limit Exceeded** answers.
