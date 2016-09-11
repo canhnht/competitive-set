@@ -30,9 +30,9 @@ const int PERMS[6][3] = {
 bool isAvailable(int, int[], int[]);
 bool canWin(int[], int[]);
 
-int main() {
+int main(int argc, char* argv[]) {
 #ifndef ONLINE_JUDGE
-  freopen("inp.txt", "r", stdin);
+  freopen(argv[1], "r", stdin);
   freopen("out.txt", "w", stdout);
 #endif
 
@@ -53,9 +53,9 @@ int main() {
   	printf("%d\n", res);
   }
 
-#ifndef ONLINE_JUDGE
-  printf("\nTime elapsed: %dms", int(1000 * clock() / CLOCKS_PER_SEC));
-#endif
+// #ifndef ONLINE_JUDGE
+//   printf("\nTime elapsed: %dms", int(1000 * clock() / CLOCKS_PER_SEC));
+// #endif
 }
 
 bool isAvailable(int card, int c1[], int c2[]) {

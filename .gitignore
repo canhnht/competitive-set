@@ -1,5 +1,5 @@
 *.i*
-*.o
-a.out
+*.o*
+*.out
 inp.txt
 out.txt
